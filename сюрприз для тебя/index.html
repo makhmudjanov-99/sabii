@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сюрприз для тебя</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7e7e7;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="card" id="card">
+    <div class="card__face card__face--front">
+        Саби
+    </div>
+    <div class="card__face card__face--back">
+            <div>
+            <p  style="margin-bottom: 20px;">Может уже пора общаться по телефону?</p>
+            <p class="aaa">+998 94 433 33 68</p>
+            </div>
+    </div>
+</div>
+
+<script>
+    const card = document.getElementById('card');
+    card.addEventListener('click', function () {
+        card.classList.toggle('is-flipped');
+    });
+</script>
+
+</body>
+</html>
